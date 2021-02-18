@@ -10,7 +10,7 @@ export default class Keypad extends React.Component {
   render() {
     return(
 
-      <input keyUp={this.handleKeyUp}type="password"></input>
+      <input keyUp={(e) => {this.handleKeyUp}}type="password"></input>
     )
   }
 }
