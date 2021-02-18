@@ -3,14 +3,12 @@ import React from 'react'
 
 export default class Keypad extends React.Component {
 
-  handleKeyUp() {
-
-  }
+  
 
   render() {
     return(
 
-      <input keyUp={(e) => {this.handleKeyUp}}type="password"></input>
+      <input keyUp={(e) => {console.log('Entering password...')}}type="password"></input>
     )
   }
 }
