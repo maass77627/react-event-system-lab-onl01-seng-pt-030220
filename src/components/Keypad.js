@@ -8,7 +8,7 @@ export default class Keypad extends React.Component {
   render() {
     return(
 
-      <input keyUp={(e) => {console.log('Entering password...')}}type="password"></input>
+      <input onChange={(e) => {console.log('Entering password...')}}type="password"></input>
     )
   }
 }
